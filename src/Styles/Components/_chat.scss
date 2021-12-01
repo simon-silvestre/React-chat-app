@@ -1,0 +1,88 @@
+.Chat {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+    width: 100%;
+
+    .messageContainer {
+        margin: 255px 0 60px;
+        padding: 20px;
+    }
+    .Message {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+
+        img {
+            width: 70px;
+            border-radius: 50%;
+        }
+
+        .content {
+            margin-left: 20px;
+
+            p {
+                line-height: 25px;
+                color: #fff;
+                font-weight: 200;
+                font-size: 14px;
+
+                &:nth-child(1) {
+                    color: $color-2;
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .Message.sent {
+        flex-direction: row-reverse;
+
+        .content {
+            margin-right: 20px;
+            text-align: right;
+        }
+    }
+
+    .SendMessage {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: $color-1;
+
+        form {
+            width: 95%;
+            position: relative;
+            margin: 20px auto 20px auto;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+            input, button {
+                border: none;
+                color: $color-3;
+            }
+
+            input {
+                padding: 15px 80px 15px 25px;
+                background: #3e4146;
+                width: 100%;
+                border-radius: 8px;
+                outline: none;
+            }
+
+            button {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                background: transparent;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-weight: 800;
+                font-size: 14px;   
+                padding: 15px 25px;         
+            }
+        }
+    }
+}

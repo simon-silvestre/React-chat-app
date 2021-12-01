@@ -1,0 +1,19 @@
+$poppins: Poppins,sans-serif;
+$color-1: #4c4d56;
+$color-2: #a5295b;
+$color-3: #babcc6;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $poppins;
+}
+
+p, button, input {
+    font-size: 16px;
+}
+
+body {
+    background: $color-1;
+}
