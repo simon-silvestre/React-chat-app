@@ -1,8 +1,8 @@
 .signButton {
     border: none;
-    background: $color-1;
+    background: transparent;
     padding: 5px 10px;
-    color: $color-2;
+    color: #fff;
     font-weight: 900;
     text-transform: uppercase;
     margin-right: 50px;
@@ -11,6 +11,6 @@
     border-radius: 8px;
 
     &:hover {
-        background: #27272d;
+        color: $color-1;
     }
 }
